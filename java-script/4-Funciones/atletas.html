@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let i = 0
+        
+        
+        let lstNombres = ""
+        let lstSaltos = ""
+        let contador = 0
+
+        let numAtletas = Number(prompt("Cuanto atletas desea ingresar?"))
+
+        for( i ; i < numAtletas; i++){
+
+            var campeona = ""
+            var puntajeCampeona = 0
+
+            nombre = prompt("Digite el nombre del atleta")
+            salto = Number(prompt("Digite la distancia de salto"))
+
+            campeona = nombre 
+            puntajeCampeona = salto
+
+            
+            if (salto > puntajeCampeona){
+                campeona = nombre 
+                puntajeCampeona = salto
+            }
+
+            if (salto > 15.50){
+                contador += 1
+            }
+
+            
+            
+
+            /* lstNombres += `${nombre}, `
+            lstSaltos += `${salto}, ` */
+
+            
+            
+        }
+
+
+        alert(`La campeona es: ${campeona} y ${puntajeCampeona}`)
+        alert(`El record se rompio ${contador} veces. El premio por romper el record sera de ${500/contador} millones de dolares`)
+        
+       
+
+        /* console.log(lstNombres)
+        console.log(lstSaltos)
+
+        maximo = Math.max(lstSaltos)
+        console.log(lstSaltos) */
+
+    </script>
+    
+</body>
+</html>
