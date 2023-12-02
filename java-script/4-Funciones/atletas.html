@@ -8,26 +8,22 @@
 <body>
 
     <script>
-        let i = 0
+
         
-        
-        let lstNombres = ""
-        let lstSaltos = ""
         let contador = 0
-
         let numAtletas = Number(prompt("Cuanto atletas desea ingresar?"))
+        let campeona = ""
+        let puntajeCampeona = 0
 
-        for( i ; i < numAtletas; i++){
+        for( let i = 0 ; i < numAtletas; i++){
 
-            var campeona = ""
-            var puntajeCampeona = 0
+            
 
-            nombre = prompt("Digite el nombre del atleta")
-            salto = Number(prompt("Digite la distancia de salto"))
+            let nombre = prompt("Digite el nombre del atleta")
+            let salto = Number(prompt("Digite la distancia de salto"))
 
-            campeona = nombre 
-            puntajeCampeona = salto
-
+            
+            
             
             if (salto > puntajeCampeona){
                 campeona = nombre 
@@ -35,6 +31,7 @@
             }
 
             if (salto > 15.50){
+
                 contador += 1
             }
 
@@ -48,9 +45,10 @@
             
         }
 
-
         alert(`La campeona es: ${campeona} y ${puntajeCampeona}`)
-        alert(`El record se rompio ${contador} veces. El premio por romper el record sera de ${500/contador} millones de dolares`)
+
+       
+        
         
        
 
